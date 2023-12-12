@@ -1,0 +1,41 @@
+package com.techullurgy.oaccountingapp.data.room.database.fake
+
+import com.techullurgy.oaccountingapp.domain.AccountingInfo
+import com.techullurgy.oaccountingapp.domain.AccountingInfoType
+import com.techullurgy.oaccountingapp.domain.mappers.toAccountingInfoEntity
+import java.time.LocalDate
+import kotlin.random.Random
+
+val fakeAccountingInfoEntities = listOf(
+    AccountingInfo(desc = "Test 1", amount = 120.0f, date = LocalDate.now(), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 1", amount = 130.0f, date = LocalDate.now().minusDays(1), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 2", amount = String.format("%.2f", Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 3", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 4", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 5", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 6", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 7", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 8", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 9", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 10", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 11", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 12", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 13", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 14", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 15", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 16", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 17", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 18", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 19", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 20", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 21", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.INCOME).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 22", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 23", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 24", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 25", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 26", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 27", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 28", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 29", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+    AccountingInfo(desc = "Test 30", amount = String.format("%.2f",Random.nextDouble(from = 1.0, until = 120.0)).toFloat(), date = LocalDate.now().minusDays(Random.nextLong(from = 1, until = 100)), infoType = AccountingInfoType.EXPENSE).toAccountingInfoEntity(),
+)
